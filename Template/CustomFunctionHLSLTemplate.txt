@@ -1,0 +1,28 @@
+#ifndef #SCRIPTNAME_UPPERCASE#_INCLUDED
+#define #SCRIPTNAME_UPPERCASE#_INCLUDED
+
+void #SCRIPTNAME#_float(out float3 Out)
+{
+    Out = float3(1, 1, 1);
+
+    // [Option]
+    // #ifdef SHADERGRAPH_PREVIEW
+    
+    // #else
+        
+    // #endif
+}
+
+void #SCRIPTNAME#_half(out half3 Out)
+{
+    Out = half3(1, 1, 1);
+
+    // [Option]
+    // #ifdef SHADERGRAPH_PREVIEW
+    
+    // #else
+        
+    // #endif
+}
+
+#endif
