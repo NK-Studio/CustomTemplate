@@ -1,9 +1,9 @@
 # UnityCustomTemplate
 
 ### 기본제공 템플릿  
-스크립터블 오브젝트 템플릿  
-셰이더 그래프 커스텀 함수 제작용 HLSL 템플릿(SRP 패키지 필요)  
-URP Unlit 셰이더 템플릿 (URP 패키지 필요)  
+* 스크립터블 오브젝트 템플릿  
+* 셰이더 그래프 커스텀 함수 제작용 HLSL 템플릿(SRP 패키지 필요)  
+* URP Unlit 셰이더 템플릿 (URP 패키지 필요)  
 
 ### LTS -> [UnityPackage](https://github.com/NK-Studio/CustomTemplate/releases/tag/1.0.1) 다운로드
 
