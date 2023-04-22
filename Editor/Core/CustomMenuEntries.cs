@@ -8,7 +8,7 @@ namespace CustomTemplate.Editor.Core
     {
         #region SRP
 
-#if UNITY_PIPELINE_URP && UNITY_PIPELINE_HDRP
+#if UNITY_PIPELINE_URP || UNITY_PIPELINE_HDRP
         [MenuItem("Assets/Create/Shader Graph/Add HLSL")]
         private static void CreateHLSL()
         {
