@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using CustomTemplate.Editor.Extra;
 using UnityEditor;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace CustomTemplate.Editor.Core
         #region SRP
 
 #if UNITY_PIPELINE_URP || UNITY_PIPELINE_HDRP
-        [MenuItem("Assets/Create/Shader Graph/Add HLSL")]
+        [MenuItem("Assets/Create/Shader Graph/HLSL Function")]
         private static void CreateHLSL()
         {
             Texture2D cgIcon =
@@ -71,3 +72,4 @@ namespace CustomTemplate.Editor.Core
         #endregion
     }
 }
+#endif
