@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -13,7 +14,7 @@ namespace CustomTemplate.Editor.Extra
             Unsupported,
             BuiltInPipeline,
             UniversalPipeline,
-            HDPipeline
+            HighDefinitionPipeline
         }
 
         static RenderingPipelineDefines() => 
@@ -30,7 +31,7 @@ namespace CustomTemplate.Editor.Extra
                 AddDefine("UNITY_PIPELINE_URP");
             else
                 RemoveDefine("UNITY_PIPELINE_URP");
-            if (pipeline == PipelineType.HDPipeline)
+            if (pipeline == PipelineType.HighDefinitionPipeline)
                 AddDefine("UNITY_PIPELINE_HDRP");
             else
                 RemoveDefine("UNITY_PIPELINE_HDRP");
@@ -51,7 +52,7 @@ namespace CustomTemplate.Editor.Extra
             string srpType = GraphicsSettings.renderPipelineAsset.GetType().ToString();
             
             if (srpType.Contains("HDRenderPipelineAsset"))
-                return PipelineType.HDPipeline;
+                return PipelineType.HighDefinitionPipeline;
 
             if (srpType.Contains("UniversalRenderPipelineAsset") || srpType.Contains("LightweightRenderPipelineAsset"))
                 return PipelineType.UniversalPipeline;
@@ -107,3 +108,4 @@ namespace CustomTemplate.Editor.Extra
         }
     }
 }
+#endif
