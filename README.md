@@ -1,6 +1,6 @@
 # UnityCustomTemplate
 
-### LTS -> [UnityPackage](https://github.com/NK-Studio/CustomTemplate/releases/tag/1.0.1) 다운로드
+### LTS -> [UnityPackage](https://github.com/NK-Studio/CustomTemplate/releases) 다운로드
 
 # 추가적인 커스텀 템플릿 제작 방법  
 https://pebble-glider-f8f.notion.site/8d67faf88ec34b7682e4bf09091dc619  
