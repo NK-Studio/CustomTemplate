@@ -1,0 +1,62 @@
+.TitleStyle {
+    -unity-text-align: middle-center;
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -unity-font-style: bold;
+}
+
+.unity-base-field__aligned {
+}
+
+.GroupBoxStyle {
+    background-color: var(--unity-colors-alternated_rows-background);
+    padding: 10px;
+    border-radius: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.41);
+    border-right-color: rgba(0, 0, 0, 0.41);
+    border-top-color: rgba(0, 0, 0, 0.41);
+    border-bottom-color: rgba(0, 0, 0, 0.41);
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.GroupBoxStyle > Label {
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+.ButtonStyle {
+    border-radius: 100px;
+    font-size: 16px;
+    max-width: 480px;
+    min-height: 30px;
+    -unity-font-style: normal;
+    margin: 3px 5px;
+    margin-top: 6px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    align-self: center;
+}
+
+.ButtonStyle:hover {
+}
+
+.ButtonStyle:active {
+    background-color: var(--unity-colors-default-background);
+}
+
+.ButtonStyle:disabled {
+    background-color: rgba(0, 0, 0, 0.08);
+}

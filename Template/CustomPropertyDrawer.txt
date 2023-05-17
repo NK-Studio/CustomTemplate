@@ -1,0 +1,31 @@
+using UnityEditor;
+using #Namespace#;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
+
+[CustomEditor(typeof(#SCRIPTNAME#))]
+public class #SCRIPTNAME#Editor : Editor
+{
+    public VisualTreeAsset TreeAsset;
+    private #SCRIPTNAME# #scriptname#;
+
+    public override VisualElement CreateInspectorGUI()
+    {
+        if (!TreeAsset)
+            return base.CreateInspectorGUI();
+
+        #scriptname# = (#SCRIPTNAME#)target;
+
+        VisualElement root = new VisualElement();
+        TreeAsset.CloneTree(root);
+
+        // Add your UI content here
+        var inputMScript = root.Q<ObjectField>("unity-input-m_Script");
+        inputMScript.AddToClassList("unity-disabled");
+        inputMScript.Q(null, "unity-object-field__selector")?.SetEnabled(false);
+        // root.Q<Label>("title").text = "Custom Property Drawer";
+        // root.Q<Button>("btn").clickable.clicked += () => Debug.Log("Clicked!");
+        
+        return root;
+    }
+}

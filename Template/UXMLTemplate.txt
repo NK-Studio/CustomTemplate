@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/#NKUSSPath#?fileID=#NKUSSFileID#&amp;guid=#NKUSSGUID#&amp;type=3#NKUSSTemplate"/>
+    <Style src="project://database/#OdinUSSPath#?fileID=#OdinUSSFileID#&amp;guid=#OdinUSSGUID#&amp;type=3#OdinUSSTemplate" />
+    <Style src="project://database/#ToggleUSSPath#?fileID=#ToggleUSSFileID#&amp;guid=#ToggleUSSGUID#&amp;type=3#ToggleUSSTemplate" />
+    <uie:ObjectField label="Script" binding-path="m_Script" name="unity-input-m_Script" class="unity-base-field__aligned" />
+</ui:UXML>

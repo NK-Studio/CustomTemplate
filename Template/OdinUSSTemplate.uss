@@ -1,0 +1,75 @@
+.OdinGroupBoxStyle {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 1px;
+    border-left-color: rgba(0, 0, 0, 0.5);
+    border-right-color: rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(0, 0, 0, 0.5);
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    margin: 3px;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    background-color: var(--unity-colors-alternated_rows-background);
+}
+
+.OdinGroupBoxStyle--Container {
+    flex-grow: 1;
+    margin-right: 6px;
+}
+
+.OdinGroupBoxStyle .unity-group-box__label {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 1px;
+    border-left-color: rgba(0, 0, 0, 0.5);
+    border-right-color: rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(0, 0, 0, 0.5);
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    flex-shrink: 1;
+    background-color: var(--unity-colors-box-background);
+}
+
+.OdinFoldGroupStyle {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.5);
+    border-right-color: rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(0, 0, 0, 0.5);
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+    margin: 3px;
+    padding-bottom: 2px;
+    padding-top: 0;
+    background-color: var(--unity-colors-alternated_rows-background);
+}
+
+.OdinFoldGroupStyle .unity-foldout__content {
+    margin: 2px 6px 0 0;
+}
+
+.OdinFoldGroupStyle .unity-toggle {
+    padding-left: 5px;
+    border-left-color: rgba(0, 0, 0, 0.5);
+    border-right-color: rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(0, 0, 0, 0.5);
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0;
+    background-color: var(--unity-colors-box-background);
+}
