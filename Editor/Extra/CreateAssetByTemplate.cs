@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 
 namespace NKStudio
@@ -10,3 +11,4 @@ namespace NKStudio
         }
     }
 }
+#endif
