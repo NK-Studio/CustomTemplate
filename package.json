@@ -3,6 +3,6 @@
   "displayName": "CustomTemplate EditorUI",
   "version": "1.0.0",
   "unity": "2019.2",
-  "description": "유니티 커스텀 에디터 UI를 손쉽게 만들 수 있도록 해줍니다.",
+  "description": "It makes it easy to create Unity Custom Editor UI.",
   "type": "library"
 }
