@@ -9,7 +9,7 @@
     {
       "displayName": "Show Core",
       "description": "This is an example file using Animator Pro.",
-      "path": "Editor/Core"
+      "path": "Editor/Core~"
     }
   ]
 }
