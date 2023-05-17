@@ -1,0 +1,8 @@
+{
+  "name": "com.nkstudio.customtemplate.postprocessor",
+  "displayName": "customTemplate Postprocess",
+  "version": "1.0.0",
+  "unity": "2019.2",
+  "description": "This is a post-process library of custom templates.",
+  "type": "library"
+}

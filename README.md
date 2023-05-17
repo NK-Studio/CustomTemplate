@@ -1,20 +1,28 @@
-# UnityCustomTemplate
+# CustomTemplate Postprocess
 
-### LTS -> [UnityPackage](https://github.com/NK-Studio/CustomTemplate/releases) 다운로드
+# 설치방법
 
-# 추가적인 커스텀 템플릿 제작 방법  
-https://pebble-glider-f8f.notion.site/8d67faf88ec34b7682e4bf09091dc619  
+```` 
+https://github.com/NK-Studio/unity-scene-reference.git#UPM
+````
+다음 UPM 주소를 Unity Package Manager에 +버튼을 누르고 추가합니다.
 
-### 기본 제공 템플릿  
-* 스크립터블 오브젝트 템플릿  
-* 셰이더 그래프 커스텀 함수 제작용 HLSL 템플릿(SRP 패키지 필요)  
-* URP Unlit 셰이더 템플릿 (URP 패키지 필요)  
+# 사용법
 
-### 스크립터블 오브젝트 템플릿 제공  
-![스크립터블](Image/so.png)
+``` C#
+using UnityEngine;
 
-### 셰이더 그래프 커스텀 함수 hlsl 템플릿 제공  
-![셰이더그래프HLSL](Image/hlsl.png)
-
-### URP 언릿 셰이더 템플릿 제공  
-![언릿](Image/unlit.png)
+public class Demo : MonoBehaviour
+{
+    public SceneReference TargetScene;
+    
+    private void Start()
+    {
+        // Gets the address of the scene.
+        Debug.Log(TargetScene.Path);
+        
+        // Gets the name of the scene.
+        Debug.Log(TargetScene.Name);
+    }
+}
+```
