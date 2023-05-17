@@ -1,4 +1,4 @@
-#if UNITY_EDITOR && USECUSTOMTEMPALTE && ONCUSTOMTEMPLATE
+#if UNITY_EDITOR && UseTemplate
 using UnityEditor;
 
 namespace NKStudio
