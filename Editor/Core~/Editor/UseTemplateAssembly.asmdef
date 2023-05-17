@@ -11,12 +11,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "Unity",
-            "expression": "",
-            "define": "UseTemplate"
-        }
-    ],
+    "versionDefines": [],
     "noEngineReferences": false
 }
