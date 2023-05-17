@@ -4,5 +4,12 @@
   "version": "1.0.0",
   "unity": "2019.2",
   "description": "The core of the Unity custom library.",
-  "type": "library"
+  "type": "library",
+  "samples": [
+    {
+      "displayName": "Show Core",
+      "description": "This is an example file using Animator Pro.",
+      "path": "Editor/Core"
+    }
+  ]
 }
