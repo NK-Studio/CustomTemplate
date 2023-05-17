@@ -1,0 +1,22 @@
+{
+    "name": "UseTemplateAssembly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:67e4e68ba300e1b48a08354944a13191"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "",
+            "define": "UseTemplate"
+        }
+    ],
+    "noEngineReferences": false
+}
