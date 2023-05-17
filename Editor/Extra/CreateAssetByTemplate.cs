@@ -6,6 +6,7 @@ namespace NKStudio
     {
         public static void CreateScriptAsset(string path, string defaultName)
         {
+            Debug.Log("No Enable");
         }
     }
 }
