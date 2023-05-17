@@ -1,6 +1,6 @@
 {
   "name": "com.customtemplate.customtemplate.core",
-  "displayName": "customtemplate Core",
+  "displayName": "CustomTemplate Core",
   "version": "1.0.0",
   "unity": "2019.2",
   "description": "The core of the Unity custom library.",
