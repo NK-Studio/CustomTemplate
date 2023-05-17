@@ -1,0 +1,20 @@
+{
+    "name": "CustomTemplateAssembly",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "",
+            "define": "USECUSTOMTEMPALTE"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,8 @@
+{
+  "name": "com.customtemplate.customtemplate.editorui",
+  "displayName": "customtemplate EditorUI",
+  "version": "1.0.0",
+  "unity": "2019.2",
+  "description": "A library that makes it easy to create custom editor UIs in Unity",
+  "type": "library"
+}

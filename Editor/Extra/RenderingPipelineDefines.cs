@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine.Rendering;
 
-namespace CustomTemplate.Editor.Extra
+namespace NKStudio
 {
     [InitializeOnLoad]
     public class RenderingPipelineDefines

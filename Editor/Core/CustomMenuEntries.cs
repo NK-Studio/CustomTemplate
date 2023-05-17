@@ -1,11 +1,10 @@
 #if UNITY_EDITOR
-using CustomTemplate.Editor.Extra;
 using UnityEditor;
 using UnityEngine;
 
-namespace CustomTemplate.Editor.Core
+namespace NKStudio
 {
-    public abstract class CreateClass
+    public class CreateAssetByTemplate
     {
         #region SRP
 
@@ -31,11 +30,11 @@ namespace CustomTemplate.Editor.Core
         #region URP
 
 #if UNITY_PIPELINE_URP
-        [MenuItem("Assets/Create/Shader/Unlit(URP) Shader", priority = 84)]
-        private static void CreateURPUnLit()
+        [MenuItem("Assets/Create/Shader/Unlit (URP) Shader", priority = 84)]
+        private static void CreateURPUnlit()
         {
             string path = AssetDatabase.GUIDToAssetPath("25a604543cd6b124988f666b50b12a06");
-            CreateScriptAsset(path, "DefaultNewUnlit.shader");
+            CreateScriptAsset(path, "NewUnlitShader.shader");
         }
 #endif
 
@@ -58,7 +57,7 @@ namespace CustomTemplate.Editor.Core
         
         #region Core
 
-        private static void CreateScriptAsset(string templatePath, string destName)
+        public static void CreateScriptAsset(string templatePath, string destName)
         {
 #if UNITY_2019_1_OR_NEWER
             ProjectWindowUtil.CreateScriptAssetFromTemplateFile(templatePath, destName);

@@ -1,22 +1,22 @@
-Shader "Unlit/URPUnlit"
+Shader "Universal Render Pipeline/#SCRIPTNAME#"
 {
-    Properties
+  Properties
     {
         [MainTexture] _BaseMap ("Texture", 2D) = "white" { }
         [MainColor] _BaseColor ("Color", Color) = (1, 1, 1, 1)
     }
     SubShader
     {
-        Tags { "RenderType" = "Opaque" "Queue" = "Geometry" "RenderPipeline" = "UniversalPipeline" }
+        Tags { "RenderType" = "Opaque" "IgnoreProjector" = "True" "RenderPipeline" = "UniversalPipeline" }
+
         LOD 100
 
         Pass
         {
-            Name  "URPUnlit"
-            Tags { "LightMode" = "SRPDefaultUnlit" }
+            Name "Unlit"
 
             HLSLPROGRAM
-            #pragma target 4.5
+            #pragma target 2.0
             #pragma exclude_renderers gles d3d9
             #pragma multi_compile_fog
             #pragma vertex vert
@@ -34,7 +34,7 @@ Shader "Unlit/URPUnlit"
             {
                 float4 positionCS : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float fogCoord : TEXCOORD1;
+                float3 positionOS : TEXCOORD1;
             };
 
             TEXTURE2D(_BaseMap);    SAMPLER(sampler_BaseMap);
@@ -47,16 +47,37 @@ Shader "Unlit/URPUnlit"
             Varyings vert(Attributes IN)
             {
                 Varyings OUT;
-                OUT.positionCS = TransformObjectToHClip(IN.positionOS.xyz);
+                
+                VertexPositionInputs vertexInput = GetVertexPositionInputs(IN.positionOS.xyz);
+
+                OUT.positionOS = IN.positionOS.xyz;
+                OUT.positionCS = vertexInput.positionCS;
                 OUT.uv = TRANSFORM_TEX(IN.uv, _BaseMap);
-                OUT.fogCoord = ComputeFogFactor(OUT.positionCS.z);
+
                 return OUT;
             }
 
             half4 frag(Varyings IN) : SV_Target
             {
+                // Base Map
                 half4 col = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, IN.uv);
-                col.rgb = MixFog(col.rgb, IN.fogCoord);
+
+                // Apply Tint
+                col *= _BaseColor;
+
+                // Apply Fog
+                #if defined(_FOG_FRAGMENT)
+                    #if (defined(FOG_LINEAR) || defined(FOG_EXP) || defined(FOG_EXP2))
+                        float viewZ = -TransformWorldToView(TransformObjectToWorld(IN.positionOS)).z;
+                        float nearZ0ToFarZ = max(viewZ - _ProjectionParams.y, 0);
+                        // ComputeFogFactorZ0ToFar returns the fog "occlusion" (0 for full fog and 1 for no fog) so this has to be inverted for density.
+                        float density = 1.0f - ComputeFogIntensity(ComputeFogFactorZ0ToFar(nearZ0ToFarZ));
+                    #else
+                        float density = 0.0f;
+                    #endif
+                    col.rgb = lerp(col.rgb, unity_FogColor.rgb, density);
+                #endif
+                
                 return col;
             }
             ENDHLSL

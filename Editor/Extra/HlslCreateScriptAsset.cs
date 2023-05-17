@@ -1,10 +1,10 @@
-#if UNITY_EDITOR
+﻿#if UNITY_EDITOR
 using System.IO;
 using System.Text;
 using UnityEditor;
 using UnityEditor.ProjectWindowCallback;
 
-namespace CustomTemplate.Editor.Extra
+namespace NKStudio
 {
     public class HlslCreateScriptAsset : EndNameEditAction
     {
