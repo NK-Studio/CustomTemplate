@@ -8,7 +8,7 @@
   "samples": [
     {
       "displayName": "Show Core",
-      "description": "This is an example file using Animator Pro.",
+      "description": "The core of the Unity custom library.",
       "path": "Editor/Core~"
     }
   ]
