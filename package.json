@@ -6,6 +6,6 @@
   "description": "This is a post-process library of custom templates.",
   "type": "library",
   "dependencies": {
-    "com.nkstudio.customtemplate.core": "https://github.com/NK-Studio/CustomTemplate.git#Core"
+    "com.yetman.render-pipelines.universal.postprocess": "https://github.com/yahiaetman/URPCustomPostProcessingStack.git#URP12"
   }
 }
