@@ -4,8 +4,5 @@
   "version": "1.0.0",
   "unity": "2019.2",
   "description": "This is a post-process library of custom templates.",
-  "type": "library",
-  "dependencies": {
-    "com.nkstudio.customtemplate.core": "https://github.com/NK-Studio/CustomTemplate.git#Core"
-  }
+  "type": "library"
 }
