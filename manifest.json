@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "com.yetman.render-pipelines.universal.postprocess": "https://github.com/yahiaetman/URPCustomPostProcessingStack.git#URP12"
+      "URPCustomPostProcessingStack": "https://github.com/yahiaetman/URPCustomPostProcessingStack.git#URP12"
     }
 }
