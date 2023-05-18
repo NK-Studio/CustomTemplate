@@ -4,5 +4,8 @@
   "version": "1.0.0",
   "unity": "2019.2",
   "description": "This is a post-process library of custom templates.",
-  "type": "library"
+  "type": "library",
+  "gitDependencies": {
+    "com.yetman.render-pipelines.universal.postprocess": "https://github.com/yahiaetman/URPCustomPostProcessingStack.git#URP12"
+  }
 }
