@@ -58,7 +58,7 @@
     margin: 2px 6px 0 0;
 }
 
-.OdinFoldGroupStyle .unity-toggle {
+.OdinFoldGroupStyle .unity-foldout__toggle {
     padding-left: 5px;
     border-left-color: rgba(0, 0, 0, 0.5);
     border-right-color: rgba(0, 0, 0, 0.5);
